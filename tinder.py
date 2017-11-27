@@ -17,7 +17,7 @@ class MyListener(AbstractEventListener):
 def main():
     num = 1
     url = "https://tinder.com/app/login"
-    profile = webdriver.FirefoxProfile("/Users/endoutakayoshi/Library/Application Support/Firefox/Profiles/8ng7t5m9.selenium")
+    profile = webdriver.FirefoxProfile("")
     driver = webdriver.Firefox(firefox_profile=profile)
     driver = EventFiringWebDriver(driver, MyListener())
 
